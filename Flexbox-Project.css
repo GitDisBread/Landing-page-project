@@ -1,17 +1,18 @@
 .sect-1,
 .sect-2,
 .sect-3,
-footer {
+.sect-4 {
     display: flex;
-    margin-left: 100px;
-    margin-right: 100px;
-    min-height: 25px;
+    min-height: 100px;
+    max-height: 100px;
     margin-left: 50px;
     margin-right: 50px;
 }
 
 body {
-    padding-bottom: 35px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
     min-width: 750px;
     align-self: center;
     background-color: black
@@ -110,12 +111,43 @@ img {
 
 .sect-2{
     background-color: rgb(226, 224, 224);
+    display: flex;
 }
 
-.sect-3{
+.sect-2-boxes {
+    display: flex;
+    height: 15px;
+    width: 15px;
+    gap: 15px;
+    border: rgb(68, 68, 243);
+}
+
+.sect-3 {
     background-color: rgb(100, 99, 99); 
+    padding: 50px;
+}
+
+.sect-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white
+}
+
+.sect-4-body {
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: rgb(68, 68, 243); 
+    max-height: 50px;
+
 }
 
 footer {
-    background-color: rgb(226, 224, 224);
+    display: flex;
+    background-color: #1F2937;
+    color: white;
+    margin-right: 50px;
+    margin-left: 50px;
+    justify-content: center;
 }
