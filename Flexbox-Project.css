@@ -3,16 +3,20 @@
 .sect-3,
 .sect-4 {
     display: flex;
-    min-height: 100px;
-    max-height: 100px;
+    height: 200px;
     margin-left: 50px;
     margin-right: 50px;
 }
+
+#picture-1 {
+    width: 500px;
+} 
 
 body {
     margin-top: 0px;
     margin-bottom: 0px;
     padding-bottom: 0px;
+    justify-content: center;
     min-width: 750px;
     align-self: center;
     background-color: black
@@ -35,8 +39,8 @@ header {
     flex-direction: row;
     padding: 10px;
     margin: 10px;
-    padding-right: 50px;
-    padding-left: 50px;
+    padding-right: 20px;
+    padding-left: 20px;
     padding-bottom: 0px;
     padding-top: 0px;
     margin-top: 0px;
@@ -66,9 +70,9 @@ a {
     flex-direction: row;
     justify-content: center;
     flex: 1;
-    padding-right: 60px;
-    padding-left: 60px;
-    justify-content: center;
+    padding-right: 30px;
+    padding-left: 30px;
+    justify-content: space-between;
 }
 
 .sect-1-text {
@@ -76,6 +80,12 @@ a {
     flex-direction: column;
     padding-bottom: 35px;
     margin: 0px;
+    max-width: 200px;
+    flex-wrap: wrap;
+}
+
+.sect-1-img {
+    display: flex;
 }
 
 h3 {
@@ -89,8 +99,6 @@ p {
     font-size: smaller;
 }
 
-
-
 .sect-1-button {
     display: flex;
     width: 75px;
@@ -102,44 +110,102 @@ p {
     margin-top: 5px;
 }
 
-img {
-    width: 225px;
-    height: 125px;
-    flex: 1;
+/*this is for the figcaptions on all imgs*/
+figure {
+    display: flex;
+    flex-direction: column;
+    font-size: xx-small;
+    justify-content: center;
+    max-width: 60px;
     padding-right: 0px;
+    
+    
 }
 
 .sect-2{
-    background-color: rgb(226, 224, 224);
+    background-color: rgb(243, 243, 243);
     display: flex;
+    flex-direction: column;
 }
 
-.sect-2-boxes {
+.sect-2-header {
     display: flex;
-    height: 15px;
-    width: 15px;
-    gap: 15px;
+    justify-content: center;
+    max-height: 25px;
+    margin: 15px;
+    padding-top: 0px;
+}
+
+.sect-2-imgs {
+    display: flex;
+    flex-direction: row;
     border: rgb(68, 68, 243);
+    align-self: center;
+    justify-content: center;
+    gap: 25px;
+}
+/*this is setting sizes for all imgs*/
+img {
+    max-height: 80px;
+    width: auto;
 }
 
 .sect-3 {
-    background-color: rgb(100, 99, 99); 
-    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    color: rgba(0, 0, 0, 0.658);
+    background-color: #E5E7EB; 
+}
+
+.quote-name {
+    display: flex;
+    color: black;
+    padding-left: 250px;
 }
 
 .sect-4 {
     display: flex;
     justify-content: center;
-    align-items: center;
-    background-color: white
+    background-color: white;
 }
 
 .sect-4-body {
     display: flex;
-    align-items: center;
+    align-self: center;
+    justify-content: space-around;
     color: white;
-    background-color: rgb(68, 68, 243); 
-    max-height: 50px;
+    border-radius: 5px;
+    background-color: #3882F6; 
+    max-height: 75px;
+    width: 500px;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+.sect-4-text {
+    display: flex;
+    flex-direction: column;
+    font-size: small;
+    margin-bottom: 25px;
+}
+
+h5 {
+    margin-bottom: 0px;
+}
+
+.sect-4-button {
+    height: 30px;
+    width: 100px;
+    align-items: center;
+    align-self: center;
+    color: white;
+    background-color: #3882F6;
+    border-radius: 5px;
+    border-color: white;
 
 }
 
